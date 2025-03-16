@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+title, h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
+    color: white;
+    background-color: forestgreen;
+}
+
+button:hover {
+    background-color: rgb(17, 85, 17);
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header {
+    background-color: rgb(245, 245, 245);
+    padding: 15px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+header .logo {
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+
+header nav ul {
+    display: flex; 
+    gap: 20px; 
+}
+
+header nav ul li a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: green;
+}
+
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("../imágenes/maquina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inicio h1 {
+    color: white;
+}
+
+#inicio p {
+    color: white;
+}
+
+
+#esencia-italiana .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#nuestros-platos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#nuestros-platos .carta {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#nuestros-platos .carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("../imágenes/pastas.jpg");
+}
+
+#nuestros-platos .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("../imágenes/Pizza.jpg");
+}
+
+#nuestros-platos .carta:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("../imágenes/tiramisu_.jpg");
+}
+
+#reservas h3 {
+    text-align: center;
+    padding: 20px 12px;
+}
+
+#reservas p {
+    text-align: center;
+    padding: 20px 12px;
+}
+
+#reservas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+}
+
+#reservas .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#reservas button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.16);
+    color: white;
+    background-color: forestgreen;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+footer {
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+}
